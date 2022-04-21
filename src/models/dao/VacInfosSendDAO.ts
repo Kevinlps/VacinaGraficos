@@ -97,15 +97,6 @@ export const getVacsSendStatistic = (): VacTypesSend | Object => {
                 objInside[item.vacType] = item.amount
             }
 
-        if(vacsSendResume[leftSide]) {
-            const objInside = vacsSendResume[leftSide]
-            if(objInside[item.vacType]) {
-                objInside[item.vacType] += item.amount
-            }  else {
-                objInside[item.vacType] = item.amount
-            }   
-
-
         } else {
             vacsSendResume[leftSide] = {
                 [item.vacType]: item.amount
