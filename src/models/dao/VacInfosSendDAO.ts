@@ -88,7 +88,7 @@ export const getVacsSendStatistic = (): VacTypesSend | Object => {
 
         const leftSide = `${item.year}/${item.monthName}`
 
-<<<<<<< HEAD
+
         if (vacsSendResume[leftSide]) {
             const objInside = vacsSendResume[leftSide]
             if (objInside[item.vacType]) {
@@ -96,7 +96,7 @@ export const getVacsSendStatistic = (): VacTypesSend | Object => {
             } else {
                 objInside[item.vacType] = item.amount
             }
-=======
+
         if(vacsSendResume[leftSide]) {
             const objInside = vacsSendResume[leftSide]
             if(objInside[item.vacType]) {
@@ -104,7 +104,7 @@ export const getVacsSendStatistic = (): VacTypesSend | Object => {
             }  else {
                 objInside[item.vacType] = item.amount
             }   
->>>>>>> 8c76664f1632f51ec98ed44195e5765e73abcb61
+
 
         } else {
             vacsSendResume[leftSide] = {
@@ -113,14 +113,14 @@ export const getVacsSendStatistic = (): VacTypesSend | Object => {
         }
     })
 
-<<<<<<< HEAD
+ 
     return vacsSendResume
-=======
+
     console.log(vacsSend)
     console.log(vacsSendResume)
 
     return vacsSend
->>>>>>> 8c76664f1632f51ec98ed44195e5765e73abcb61
+
 }
 
 
